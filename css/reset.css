@@ -1,0 +1,25 @@
+/*según se indica en 
+https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+*/
+html{
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after{
+    box-sizing: inherit;
+}
+
+/*Para eliminar los espacios del body que aplica por defecto el navegador*/
+body{
+
+    margin: 0;
+    padding: 0;
+}
+
+/*Para el diseño responsive y media*/
+img,
+video{
+    max-width: 100%;
+}
