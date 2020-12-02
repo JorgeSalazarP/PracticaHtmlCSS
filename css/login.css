@@ -13,6 +13,10 @@ body{
     align-items: center;
     min-height: 100vh;
     font-family: Titillium, sans-serif,Arial,Helvetica;
+    background: url("../img/fondo-oscuro.jpg");
+    background-size : cover;
+    background-position : center center;
+
 }
 
 img{
@@ -46,6 +50,7 @@ main{
     height: 90vh;
     
     
+    
 }
 
 .form-register{
@@ -53,12 +58,12 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100%;
-    height: 100%;
-    background-color: #ccc;
+    background-color:transparent;
+    border-radius: 5px;
+    border:solid 2px #ccc;
+    box-shadow: 1px 1px 6px #ccc inset;
     padding: 40px;
-    border-radius: 4px;
-    color:white;
+    color: violet;
 
 }
 
@@ -96,3 +101,4 @@ main{
     margin-bottom: 20px;
     cursor: pointer;
 }
+
