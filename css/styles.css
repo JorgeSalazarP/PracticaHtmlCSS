@@ -1,0 +1,17 @@
+:root{
+    /********COLORES************/
+    --color-principal:#d31f28;
+    --color-secundario:#ccc;
+
+    /********FUENTES************/
+    --fuente-principal: "Titillium";
+    --fuente-secundaria: "Verdana";
+}
+
+a,
+a:visited,
+a:link,
+a:focus{
+    text-decoration: none;
+    
+}

@@ -12,8 +12,8 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    font-family: Titillium, sans-serif,Arial,Helvetica;
-    background: url("../img/fondo-oscuro.jpg");
+    font-family: var(--fuente-principal), sans-serif,Arial,Helvetica;
+    background: url("../img/fondo.jpg");
     background-size : cover;
     background-position : center center;
 
@@ -40,6 +40,7 @@ img{
     left: 17vh;
     font-size: 2rem;
     letter-spacing: 1.5px;
+    color:var(--color-principal);
 }
 
 main{
@@ -60,17 +61,18 @@ main{
     justify-content: center;
     background-color:transparent;
     border-radius: 5px;
-    border:solid 2px #ccc;
-    box-shadow: 1px 1px 6px #ccc inset;
+    box-shadow: 1px 1px 5px var(--color-secundario)inset;
     padding: 40px;
-    color: violet;
-
+    color:var(--color-secundario);
+    font-family: var(--fuente-secundaria), Geneva, Tahoma, sans-serif;
+    background-color: rgba(35, 35, 35, 0.75);
 }
 
 .form-register h2{
 
     font-size: 2rem;
     
+   
 }
 .form-register label{
 
@@ -87,18 +89,27 @@ main{
     height: 7vh;
     padding: 10px;
     margin-bottom: 20px;
+    border-radius: 5px;
+}
 
+#email:focus,
+#password:focus{
+
+    border-color:1px solid var(--color-principal);
 }
 
 [type="submit"]{
 
     height: 7vh;
-    color: lightyellow;
-    background-color: #007ab3;
+    color: var(--color-secundario);
+    background-color:var(--color-principal);
     font-size: 1.3em;
     letter-spacing: 0.5px;
     margin-top: 20px;
     margin-bottom: 20px;
     cursor: pointer;
+    border-radius: 5px;
+
+
 }
 
