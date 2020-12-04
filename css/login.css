@@ -2,13 +2,128 @@
 
     font-family: "Titillium";
     src: url('./fonts/TitilliumWeb-Regular.ttf');
-    font-weight: normal;
-    font-style: normal;
+    
 }
 
 body{
     
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: var(--fuente-principal), sans-serif,Arial,Helvetica;
+    background-color: rgba(5, 5, 5, 0.904);
+    box-shadow: 1px 1px 5px var(--color-secundario)inset;
+
+}
+.header-logo img{
+    width: 20%;
+}
+.header-logo{
+    
+    display: flex;
+    justify-content: start; /*Mandamos los elementos del logo a la parte sup.izq.*/
+    align-items: center;
+
+}
+
+.header-logo h1{
+    width: auto;
+    height: auto;
+    color:var(--color-secundario);
+
+}
+
+main{
+   
+    width: 100vw;
+    height: 100vh;
+    padding-bottom: 70px; /*Lo ponemos para que en la pantalla móvil ocupe todo el contenido */
+}
+
+.form-register{
+    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color:transparent;
+    /*border-radius: 5px;
+    box-shadow: 1px 1px 5px var(--color-secundario)inset;*/
+    padding: 40px; /*Para que los elementos tengan aire de en los laterales*/
+    color:var(--color-secundario);
+    font-family: var(--fuente-secundaria), Geneva, Tahoma, sans-serif;
+    /*background-color: rgba(35, 35, 35, 0.75);*/
+    
+}
+
+.form-register h2{
+    
+    font-size: 1.6rem;
+
+}
+
+
+
+
+/*
+.form-register label{
+
+    padding-bottom: 10px;
+    font-size: 1.2em;
+    
+}*/
+
+.form-register label{
+
+    display: none; /*En la versión móvil desaparecen*/
+}   
+
+
+input[type="email"],
+input[type="password"]{
+
+    width: 100%;
+    height: 10vh;
+    border-radius: var(--border-radius);
+    margin-top: 10px;
+    font-size: 1.1rem;
+    padding: 0.5rem;
+    transition: all 300ms;
+
+}
+
+
+input[type="submit"]{
+
+    height: 10vh;
+    color: var(--color-secundario);
+    background-color:var(--color-principal);
+    font-size: 1.1em;
+    letter-spacing: 0.5px;
+    border-radius: var(--border-radius);
+    margin-top: 10px;
+    margin-bottom: 5px;
+    
+}
+
+.form-register a{
+    
+    text-align: end;
+    color: var(--color-secundario);
+    margin-top: 5px;
+    
+}
+
+
+/*****************************
+
+body{
+    
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -18,7 +133,6 @@ body{
     background-position : center center;
 
 }
-
 img{
     width: 10vw;
 }
@@ -48,10 +162,7 @@ main{
     flex-direction: column;
     justify-content: center;
     width: 30vw;
-    height: 90vh;
-    
-    
-    
+    height: 90vh;    
 }
 
 .form-register{
@@ -92,11 +203,7 @@ main{
     border-radius: 5px;
 }
 
-#email:focus,
-#password:focus{
 
-    border-color:1px solid var(--color-principal);
-}
 
 [type="submit"]{
 
@@ -109,7 +216,5 @@ main{
     margin-bottom: 20px;
     cursor: pointer;
     border-radius: 5px;
-
-
 }
 

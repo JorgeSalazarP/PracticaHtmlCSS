@@ -1,11 +1,14 @@
 :root{
     /********COLORES************/
-    --color-principal:#d31f28;
-    --color-secundario:#ccc;
+    --color-principal:#ec0d18;
+    --color-secundario:#fff;
 
     /********FUENTES************/
     --fuente-principal: "Titillium";
-    --fuente-secundaria: "Verdana";
+    --fuente-secundaria:"Helvetica" ;
+
+    /********BORDES***********/
+    --border-radius: 8px;
 }
 
 a,
@@ -13,5 +16,5 @@ a:visited,
 a:link,
 a:focus{
     text-decoration: none;
-    
+    font-family: var(--fuente-principal);
 }
