@@ -11,10 +11,44 @@
     --border-radius: 8px;
 }
 
+@font-face{
+
+    font-family: "Titillium";
+    src: url('./fonts/TitilliumWeb-Regular.ttf');
+    
+}
+
+li{
+
+    list-style: none;
+}
 a,
 a:visited,
 a:link,
 a:focus{
     text-decoration: none;
     font-family: var(--fuente-principal);
+}
+
+.header-logo img{
+    width: auto;
+    max-width: 115px; /*Siempre se queda en el mismo tamaño*/
+    
+}
+.header-logo{
+    
+    width: 100%;
+    display: flex;
+    justify-content: start; /*Mandamos los elementos del logo a la parte sup.izq.*/
+    align-items: center;
+    
+    
+}
+
+.header-logo h1{
+    width: auto;
+    height: auto;
+    color:var(--color-secundario);
+    font-family: var(--fuente-principal);
+
 }
