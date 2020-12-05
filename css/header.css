@@ -77,7 +77,7 @@ button{
     min-width: 10rem;
     border-radius: 20px;
     border: 0;
-    background: linear-gradient(to right, #79484d, var(--color-principal), red);
+    background: linear-gradient(to left, #79484d, var(--color-principal), red);
     color: var(--color-secundario);
     
 }
