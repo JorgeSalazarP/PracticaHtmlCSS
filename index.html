@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/layout.css">
     <link rel="icon" type="image/x-icon" href="./img/logo.png" />
     <title>JS MOVIES</title>
 </head>
@@ -21,10 +22,10 @@
         <h1>JS MOVIES</h1>
         <nav id="navbar">
             <ul class="navbar-list">
-                <li class="navbar-item"><a href="#">Inicio</a></li>
                 <li class="navbar-item"><a href="#">Series TV</a></li>
                 <li class="navbar-item"><a href="#">Películas</a></li>
                 <li class="navbar-item"><a href="#">Novedades</a></li>
+                <li class="navbar-item"><a href="#">Favoritos</a></li>
             </ul>
             <div class="search">
                 <input type="text" id="buscar" name="buscar"/>
@@ -34,15 +35,114 @@
 
            
         </nav>
-        <button id="out">Cerrar Sesión</button>
+        <button id="exit">Cerrar Sesión</button>
     </header>
         
     
 
-    
+    <main id="layout">
+        <h2>Series TV</h2>
+        <section class="container-gallery">
+
+            <article class="gallery-container">
+                <img class="img-gallery" src="./img/aladdin.jpg" alt="aladdin">
+                <img class="white-heart" src="img/corazon-blanco.jpg" alt="no-favorito">
+                <input type="checkbox" id="burger-checkbox" />
+                <label for="burger-checkbox" class="burger-label"></label>
+            </article>
+            <article class="gallery-container">
+                <img class="img-gallery" src="./img/eclipse.jpg" alt="Eclipse">
+                <img class="white-heart" src="img/corazon-blanco.jpg" alt="no-favorito">
+                
+            </article>
+            <article class="gallery-container">
+                <img class="img-gallery" src="./img/Titanic.jpg" alt="Titanic">
+                <img class="white-heart" src="img/corazon-blanco.jpg" alt="no-favorito">
+             
+            </article>
+            <article class="gallery-container">
+                <img class="img-gallery" src="./img/ugly.jpg" alt="Ugly">
+                <img class="white-heart" src="img/corazon-blanco.jpg" alt="no-favorito">
+             
+            </article>
+
+        </section>
+        <h2>Películas</h2>
+        <section class="container-gallery">
+      
+            <article class="gallery-container">
+                <img class="img-gallery" src="./img/sirenita.jpg" alt="Sirenita">
+                <img class="white-heart" src="img/corazon-blanco.jpg" alt="no-favorito">
+             
+            </article>
+            <article class="gallery-container">
+                <img class="img-gallery" src="./img/thor.jpg" alt="Thor">
+                <img class="white-heart" src="img/corazon-blanco.jpg" alt="no-favorito">
+             
+            </article>
+            <article class="gallery-container">
+                <img class="img-gallery" src="./img/rey.jpg" alt="Rey">
+                <img class="white-heart" src="img/corazon-blanco.jpg" alt="no-favorito">
+             
+            </article>
+            <article class="gallery-container">
+                <img class="img-gallery" src="./img/dos-torres.jpg" alt="Dos-Torres">
+                 <img class="white-heart" src="img/corazon-blanco.jpg" alt="no-favorito">
+             
+            </article>
+       
+        </section>
+        
+        <h2>Novedades</h2>
+        <section class="container-gallery">
+            <article class="gallery-container">
+                <img class="img-gallery" src="./img/luna.jpg" alt="Luna">
+                <img class="white-heart" src="img/corazon-blanco.jpg" alt="no-favorito">
+             
+            </article>
+            <article class="gallery-container">
+                <img class="img-gallery" src="./img/batman.jpg" alt="Batman">
+                <img class="white-heart" src="img/corazon-blanco.jpg" alt="no-favorito">
+             
+            </article>
+            <article class="gallery-container">
+                <img class="img-gallery" src="./img/comunidad.jpg" alt="Comunidad">
+                <img class="white-heart" src="img/corazon-blanco.jpg" alt="no-favorito">
+             
+            </article>  
+            <article class="gallery-container">
+                <img class="img-gallery" src="./img/nemo.jpg" alt="Nemo">
+                <img class="white-heart" src="img/corazon-blanco.jpg" alt="no-favorito">
+            </article>
+
+        </section>
+        <h2>Favoritos</h2>
+        <section class="container-gallery">
+            <article class="gallery-container">
+                <img class="img-gallery" src="./img/toy.jpg" alt="Toy-Story">
+                <img class="white-heart" src="img/corazon-blanco.jpg" alt="no-favorito">
+             
+            </article>
+            <article class="gallery-container">
+                <img class="img-gallery" src="./img/hotel.jpg" alt="Hotel">
+                <img class="white-heart" src="img/corazon-blanco.jpg" alt="no-favorito">
+            </article>
+            <article class="gallery-container">
+                <img class="img-gallery" src="./img/joker.jpg" alt="Joker">
+                <img class="white-heart" src="img/corazon-blanco.jpg" alt="no-favorito">
+            </article>
+            <article class="gallery-container">
+                <img class="img-gallery" src="./img/aquaman.jpg" alt="Aquaman">
+                <img class="white-heart" src="img/corazon-blanco.jpg" alt="no-favorito">
+            </article>
+
+        </section>
+        
+        
+    </main>
 
 
-
+<!--------------Limpiar flotados-->
 </body>
 
 </html>

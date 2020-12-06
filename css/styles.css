@@ -41,6 +41,7 @@ a:focus{
     display: flex;
     justify-content: start; /*Mandamos los elementos del logo a la parte sup.izq.*/
     align-items: center;
+   
     
     
 }

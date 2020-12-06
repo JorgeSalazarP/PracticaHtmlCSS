@@ -1,7 +1,10 @@
 .header-logo{
     position: fixed;
+    
+    
     justify-content: center;
-    border-bottom: brown 1px solid;
+    border-bottom: brown 1px solid;/************ver*/
+    background-color: rgba(35, 35, 35, 0.75);
 }
 
 .header-logo > h1{
@@ -17,6 +20,7 @@
     justify-content: center;
     align-items: center;
     flex-basis: 68%;
+
 
 }
 .navbar-list{
@@ -54,9 +58,6 @@ input[type="text"]{
 
 }
 
-.button{
-    cursor: pointer;
-}
 
 .button-search{
     width: 2rem;
@@ -68,10 +69,10 @@ input[type="text"]{
 }
 button{
     cursor: pointer;
-    outline: 0;
+  
 }
 
-#out{
+#exit{
     padding: 0.5rem;
     font-size: 1.1rem;
     min-width: 10rem;
