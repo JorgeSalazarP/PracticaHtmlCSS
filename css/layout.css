@@ -39,7 +39,6 @@
     border-radius: 2%;
     object-fit: cover;
     object-position: center top;
-    cursor: pointer;
     box-shadow: 11px -11px 73px 0px rgba(216, 13, 23, 0.883);
   
     /*grande*/
@@ -47,35 +46,9 @@
     /*box-shadow: 11px -11px 73px 0px rgba(141, 13, 19, 0.883);*/
 
 }
+
 .gallery-container{
 
     position: relative;
 }
 
-.white-heart{
-    position: absolute;
-    top:0;
-    right: 0;
-    width: 10%;
-    height: auto;
-    cursor: pointer;
-    border-radius: 20%;
-}
-
-
-
-#burger-checkbox {
-  position: absolute;
-    top:0;
-    right: 0;
-    width: 10%;
-    height: auto;
-    cursor: pointer;
-
-}
-  
-#burger-checkbox:checked{
-    
-  display: none;
-
-}
