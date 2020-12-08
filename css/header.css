@@ -49,6 +49,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    display: none;
 }
 
 input[type="text"]{
@@ -136,6 +137,7 @@ input[type="text"]{
 
         display: none;
     }
+    
 
     .header-logo{
       
@@ -178,6 +180,10 @@ input[type="text"]{
 
     .search{
         width: 20vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        
     
     }
     
@@ -253,8 +259,13 @@ input[type="text"]{
     
     .search{
         width: 20vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        
     
     }
+    
     
     button{
         cursor: pointer;
