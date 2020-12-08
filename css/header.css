@@ -1,19 +1,3 @@
-/*<nav id="navbar" class="navbar">
-      <div class="logo">Jon Snow</div>
-
-      <input type="checkbox" id="burger-checkbox" />
-      <label for="burger-checkbox" class="burger-label"></label>
-
-      <!-- ul>(li>a)*5 -->
-      <ul class="navbar-list">
-        <li class="navbar-item"><a href="#inicio">Inicio</a></li>
-        <li class="navbar-item"><a href="#que-hago">Qué hago</a></li>
-        <li class="navbar-item"><a href="#quien-soy">Quién soy</a></li>
-        <li class="navbar-item"><a href="#mis-batallas">Batallas</a></li>
-        <li class="navbar-item"><a href="#contacto">Contacto</a></li>
-      </ul>
-</nav>*/
-
 
 .header-logo{
  
@@ -41,15 +25,11 @@
 
 
 }
-.navbar-list{
 
-    padding: 0;
-}
 .navbar-item a {
 
     width: 100vw;
     display: flex;
-    
     color:var(--color-secundario);
     align-items: center;
     justify-content: center;
@@ -60,11 +40,7 @@
 
 .search{
 
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
+    display: none;
     
 
 }
@@ -104,8 +80,51 @@ input[type="text"]{
 }
 
 
+.burger-label {
+   
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2rem;
+    height: 2rem;
+ 
+}
+  
+.burger-label:before {
+    content: '';
+    background-color: var(--color-secundario);
+    width: 1rem;
+    height: 0.12rem;
+    position: absolute;
+    left: 0.45rem;
+    top: 0.65rem;
+    box-shadow: 0 0.25rem 0 0 var(--color-secundario), 0 0.5rem 0 0 var(--color-secundario);
+}
+  
 
+.navbar-list {
+    display: none;
+    margin: 0;
+    padding: 0;
+}
+  
+  /* abierto */
+#burger-checkbox:checked ~ .navbar-list {
+  
+    display: flex;
+    flex-direction: column;
 
+    
+}
+
+#burger-checkbox:checked ~ .search {
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    
+}
 /*************************
 .header-logo{
     position: fixed;
