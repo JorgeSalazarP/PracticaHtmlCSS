@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./css/layout.css">
     <link rel="stylesheet" href="./css/favorites.css">
 
+
     <link rel="icon" type="image/x-icon" href="./img/logo.png" />
     <title>JS MOVIES</title>
 </head>
@@ -19,9 +20,11 @@
 <body>
 
     <header class="header-logo">
-
-        <img src="./img/logo.png" alt="JS MOVIES">
-        <h1>JS MOVIES</h1>
+        <div class="container-logo">
+            <img src="./img/logo.png" alt="JS MOVIES">
+            <h1>JS MOVIES</h1>
+        </div>
+        
         <nav id="navbar">
             <ul class="navbar-list">
                 <li class="navbar-item"><a href="#">Series TV</a></li>
@@ -29,18 +32,19 @@
                 <li class="navbar-item"><a href="#">Novedades</a></li>
                 <li class="navbar-item"><a href="#">Favoritos</a></li>
             </ul>
-            <div class="search">
-                <input type="text" id="buscar" name="buscar"/>
+            <form class="search">
+                
+                <input type="text" id="buscar" name="buscar" placeholder="Buscar"/>
                 <button class="button-search"></button>
 
-            </div>
+            </form>
 
            
         </nav>
         <button id="exit">Cerrar Sesión</button>
     </header>
         
-    
+
 
     <main id="layout">
         <h2>Series TV</h2>
