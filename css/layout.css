@@ -1,14 +1,11 @@
-
 #layout {
-    
     
     position: absolute;
     z-index: -1;
     width:100%;
     height: auto;
-    margin-top: 85px;
+    margin-top: 180px;
     
-
 }
 #layout h2{
     
@@ -19,22 +16,15 @@
     font-weight: bold;
     font-family: var(--fuente-secundaria);
     
-    
-
 }
 .section-movies {
     
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2rem;
     padding: 2rem;
-    /*para que el párrafo con la información de la película se oculte*/
-   
 
-   
 }
-
-
 
 .img-gallery{
 
@@ -44,27 +34,7 @@
     object-fit: cover;
     object-position: center top;
     box-shadow: 11px -11px 73px 0px rgba(216, 13, 23, 0.883);
-  
-  
-
-  
-    /*grande*/
-    
-    /*box-shadow: 11px -11px 73px 0px rgba(141, 13, 19, 0.883);*/
-
 }
-
-.gallery-container:hover .content{
-
-    visibility: visible;
-    cursor: pointer;
-    background-color: rgb(15, 15, 15);
-    opacity: 0.7;
-    
-    animation: showContent 400ms linear;
-    
-}
-
 
 
 
@@ -74,9 +44,9 @@
     
 }
 
-.content{
-    background: rgba(#000,) !important;
-    display: block;
+.content{ /*EN VERSIÓN MÓVIL Y TABLET SE VE DIRECTAMENTE*/
+    background: #000;
+    opacity: 0.7;
     position: absolute;
     border-radius: 2%;
     width: 100%;
@@ -92,7 +62,7 @@
     font-family: var(--fuente-secundaria);
     color: var(--color-secundario);
     font-size: 1rem;
-    visibility: hidden;
+    
 }
 
 .content :nth-child(2){
@@ -100,8 +70,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 10%;
-    height: 10%;
+    width: 15%;
+    height: 15%;
     border-radius: 20%;
     background-color: darkgreen;
 }
@@ -111,14 +81,47 @@
     background-color:var(--color-principal);
 }
 
-@keyframes showContent{
-    from{
-       
-        transform: scale(0.5);
+
+@media (min-width:1024px){
+
+    #layout {
+
+        margin-top: 85px;
+    
+    }
+    .img-gallery{ /*Oscurecemos un poco las sombras de las imágenes en pantallas más grandes*/
+        box-shadow: 11px -11px 73px 0px rgba(141, 13, 19, 0.883);
+    }
+
+    .content{ /*PARA VERLO HAY QUE PASAR EL RATÓN POR ENCIMA*/
+           
+        visibility: hidden;
+    }
+    
+    .gallery-container:hover .content{
+    
+        visibility: visible;
+        cursor: pointer;
+        background-color: rgb(15, 15, 15);
+        
+        
+        animation: showContent 400ms linear;
         
     }
-    to{
-        transform: translateY(0%);
-      
+    
+    @keyframes showContent{
+        from{
+           
+            transform: scale(0.5);
+            
+        }
+        to{
+            transform: translateY(0%);
+          
+        }
     }
+    
+    
 }
+
+
