@@ -1,4 +1,8 @@
 
+input[type="checkbox"]{
+
+    display: none;
+}
 .header-logo{
  
     position: fixed;
@@ -79,9 +83,6 @@ input[type="text"]{
     border: 0;
     background: linear-gradient(to left, #79484d, var(--color-principal), red);
     color: var(--color-secundario);
-    
-    
-    
 }
 
 .burger-label {
@@ -91,7 +92,7 @@ input[type="text"]{
     left: 0;
     width: 2rem;
     height: 2rem;
- 
+
 }
 .burger-label:before {
     content: '';
@@ -122,7 +123,6 @@ input[type="text"]{
     flex-direction: row;
     justify-content: center;
 
-    
 }
 
 
