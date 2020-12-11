@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,21 +9,22 @@
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/movie.css">
- 
+
 
     <link rel="icon" type="image/x-icon" href="./img/logo.png" />
-   
+
     <title>MOVIE</title>
 </head>
+
 <body>
     <header class="header-logo">
         <div class="container-logo">
             <img src="./img/logo.png" alt="JS MOVIES">
             <h1>JS MOVIES</h1>
-            
+
         </div>
 
-        
+
         <nav id="navbar">
 
             <input type="checkbox" id="burger-checkbox" />
@@ -34,34 +36,52 @@
                 <li class="navbar-item"><a href="#favoritos">Favoritos</a></li>
             </ul>
             <form class="search">
-                
-                <input type="text" id="buscar" name="buscar" placeholder="Buscar"/>
+
+                <input type="text" id="buscar" name="buscar" placeholder="Buscar" />
                 <button class="button-search"></button>
 
             </form>
 
-           
+
         </nav>
 
         <button id="exit">Cerrar Sesión</button>
     </header>
 
+    
     <main>
 
+       
+        <article >
 
-        <article class="movie">
-           
             <section class="video">
+                
                 <h2>AQUAMAN</h2>
-                <video controls>
+                <video class="border-video" controls>
                     <source src="./movie/movie.mp4" type="video/mp4">
-                    No se puede reproducir el vídeo.   
+                    No se puede reproducir el vídeo.
                 </video>
             </section>
-        
+            
+            
+
         </article>
+
+        <article id="movie">
+            <section class="information-movie">
+                
+                <p>2018</p>
+                <p id="age">16+</p>
+                <p>2h 23min</p>
+            </section>
         
+            <p>El superhéroe anfibio Arthur Camber descubre lo que es ser AQUAMAN.
+                Y debe impedir que el rey de Atlantis le declare la guerra a la tierra.Una película galardonada con dos Oscars.
+            </p>
+        </article>
+
 
     </main>
 </body>
+
 </html>
