@@ -19,6 +19,14 @@
     src: url('./fonts/TitilliumWeb-Regular.ttf');
     
 }
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+
+    background-color:rgb(31, 25, 25);
+}
 
 li{
 
@@ -32,6 +40,7 @@ a:focus{
     font-family: var(--fuente-principal);
 }
 
+/*****************VALORES POR DEFECTO DEL LOGO PARA LAS PÁGINAS LOGIN E INDEX*****/
 .header-logo img{
     width: auto;
     max-width: 115px; /*Siempre se queda en el mismo tamaño*/
@@ -43,8 +52,7 @@ a:focus{
     display: flex;
     justify-content: start; /*Mandamos los elementos del logo a la parte sup.izq.*/
     align-items: center;
-   
-    
+
     
 }
 

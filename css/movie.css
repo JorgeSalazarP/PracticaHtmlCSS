@@ -23,8 +23,12 @@ h2{
     color: var(--color-secundario);
     font-size: 2.5rem;
     letter-spacing: 1.5rem;
-
+    
+        
 }
+
+
+
 .video{
     display: flex;
     flex-direction: column;
@@ -111,8 +115,7 @@ h2{
     justify-content: center;
     font-family: var(--fuente-secundaria);
 
-    
-  
+
 }
 
 h3{
@@ -128,9 +131,9 @@ h3{
     width:30%;
     border: 3px solid ;
     border-radius: 50%;
+    
 
 }
-
 
 
 .person h4{
@@ -212,7 +215,6 @@ h3{
 
     }
    
-    
     #movie > p{
     
         width: 61% ;
@@ -234,20 +236,27 @@ h3{
     }
     
   
-    
     .section-episodies{
         
         grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
     
     }
- 
-   
-    
+
     .img-gallery{
     
         height: 200px;
         width: 200px;
+        transition: 400ms all;
        
     }
+    
+
+    .img-gallery:hover{
+
+   
+        transform: scale(1.2,1.2);
+    
+    }
+
     
 }
