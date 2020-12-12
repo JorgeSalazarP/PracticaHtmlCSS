@@ -44,6 +44,7 @@ input[type="checkbox"]{
     line-height: 2rem;
     font-size: 2rem;
     padding: 1rem;    
+    cursor: pointer;
 }
 .search{
     display: flex;

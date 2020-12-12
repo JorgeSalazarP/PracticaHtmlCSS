@@ -1,18 +1,21 @@
 body{
-    background: url('../img/aquaman-fondo.jpg') no-repeat;
+   
+    background: url('../img/aquaman-fondo1.jpg') no-repeat fixed;
     background-size : cover;
-        background-position : center center;
+    background-position : center center;
     
 }
+
+
 main{
-   
+    position: absolute;
+    z-index: -1; /*para que el menú nunca se oculte*/
     width: 100vw;
     min-height: 100vh;
-    
-    
-    
+    margin-top: 130px;
 
 }
+
 h2{
     margin-top: 6%;
     margin-bottom: 2%;
@@ -20,25 +23,20 @@ h2{
     color: var(--color-secundario);
     font-size: 2.5rem;
     letter-spacing: 1.5rem;
-  
-    
+
 }
-
-
 .video{
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     
-    
 }
 
-.border-video{
 
-   
-    width: 60%;
+.border-video{
+    
+    width: 80%;
     height: auto;
     height: auto;
     box-shadow: 0 0 0 10px var(--color-secundario),  11px -11px 73px 0px rgba(141, 13, 19, 0.883);
@@ -48,48 +46,208 @@ h2{
 }
 
 #movie{
-
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: var(--color-secundario);
     font-family: var(--fuente-secundaria);
+    opacity: 0.85;
     
 }
 .information-movie{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-top: 2rem;
-    
+
 }
 .information-movie p{
     
     padding: 0 2rem;
     font-weight: bold;
+    background-color: black;
+    border: 3px solid ;
+    border-radius: 10px;
+    margin: 0 5px;
     
 }
-#age{
- 
+
+.information-movie p:nth-child(2){
+     
     background-color: darkgreen;
     
 }
 
 #movie > p{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+        
     padding: 1rem;
-    width: 61% ;
+    width: 81% ;
     font-family: var(--fuente-principal);
     font-size: 1.2rem;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.4px;
     border: 10px solid ;
     border-radius: 20px;
-   
+    background-color: black;
+    
+}
+#actors{
+        
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.person{
+    
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--fuente-secundaria);
+
+    
+  
+}
+
+h3{
+
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 1rem;
+    border: 5px solid ;
+    border-radius: 10px;
+}
+.person img{
+
+    width:30%;
+    border: 3px solid ;
+    border-radius: 50%;
+
 }
 
 
 
+.person h4{
+
+    font-size: 1.3rem;
+
+}
+
+.section-episodies{
+        
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+
+}
+
+.gallery-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+    
+  
+}
+
+.gallery-container p{
+    
+    display: block;
+    padding: 0.5rem;
+    font-size: 1.3rem;
+    color:white;
+    font-weight: bold;
+    font-family: var(--fuente-principal);
+    background-color: var(--color-principal);
+    border-radius: 5%;
+   
+ 
+}
+
+.img-gallery{
+
+    height: 300px;
+    width: 300px;
+    border-radius: 2%;
+    object-fit: cover;
+    object-position: center top;
+    box-shadow: 11px -11px 73px 0px rgba(216, 13, 23, 0.883);
+    cursor: pointer;
+    border: 5px solid ;
+    border-radius: 10px;
+    
+   
+}
+
+
+@media (min-width:1024px){
+
+    main{
+        margin-top: 0px;
+    }
+    .border-video{
+    
+        width: 60%;       
+        
+    }
+    
+    .information-movie{
+        
+        font-size: 1.2rem;
+      
+    
+    }
+    .information-movie p{
+        
+        border: 5px solid;
+
+    }
+   
+    
+    #movie > p{
+    
+        width: 61% ;
+    }
+
+
+    .person img{
+    
+        width: 35%;
+        border: 5px solid ;
+      
+    }
+    
+    .person h4{
+        background-color: black;
+        padding: 0.5rem;
+        border-radius: 10px;
+        border: 3px solid;
+    }
+    
+  
+    
+    .section-episodies{
+        
+        grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    
+    }
+ 
+   
+    
+    .img-gallery{
+    
+        height: 200px;
+        width: 200px;
+       
+    }
+    
+}
