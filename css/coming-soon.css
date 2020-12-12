@@ -1,0 +1,149 @@
+body{
+    font-family: var(--fuente-principal), Verdana, Tahoma;
+    background: #000 url('../img/coming-soon.jpg') no-repeat fixed;
+    background-size : cover;
+    background-blend-mode: hard-light; /*oscurecemos para darle efecto al container*/
+    min-height: 100vh;
+    overflow: hidden;
+    
+}
+
+.container{
+
+    position: absolute;
+    top: 80px;
+    bottom: 80px;
+    left: 100px;
+    right: 100px;
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;
+    align-items: center;
+    background: url('../img/coming-soon.jpg') no-repeat fixed;
+    background-size : cover;
+   
+
+}
+
+.container h1{
+
+    text-align: center;
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: -100px;
+    background: rgb(234, 238, 240);
+    opacity: 0.8;
+
+    
+    
+}
+.container h1 span{
+
+    display: block;
+    letter-spacing: 8px;
+    font-size: 4.8rem;
+    color:rgb(230, 7, 156);
+    background: rgb(234, 238, 240);
+    opacity: 0.8;
+    
+}
+
+.count{
+    display: flex;
+    margin-top: 50px;
+   
+}
+
+.count div{
+
+    position: relative;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    background: #333;
+    color: #fff;
+    margin: 0 15px;
+    font-size: 3em;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+.count div:before{
+    content: '';
+    position: absolute;
+    top:-30px;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background:rgb(230, 7, 156);
+    color: var(--color-secundario);
+    font-size: 1.3rem;
+    line-height: 50px;
+    font-weight: 300;
+}
+
+.count #days:before{
+
+    content: 'Días';
+}
+.count #hours:before{
+
+    content: 'Horas';
+}
+.count #minutes:before{
+
+    content: 'Minutos';
+}
+
+.count #seconds:before{
+
+    content: 'Segundos';
+}
+
+.subscribe-form{
+
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 10%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    
+    
+    color: #333;
+ 
+    font-size: 1.3rem;
+    
+}
+
+
+.subscribe-form input{
+
+    width: 18rem;
+    height: 30px;
+    border: none;
+    padding-left: 5px;
+    border-radius: 5px;
+    border:solid 1px #ccc;
+    box-shadow: 1px 1px 4px #ccc inset;
+}
+.subscribe-form label{
+
+    margin-right: 0.5rem;
+    font-weight: bold;
+    color:#333;
+    
+}
+
+.subscribe-form a{
+
+    background:rgb(230, 7, 156);
+    border-radius: 5px;
+    padding:0 1rem;
+    color:var(--color-secundario);
+}
+
+
+
